@@ -138,6 +138,24 @@ Change case - SHIFT + tilde (keep pressing and the cursor will keep moving after
 Move the next line up - while on the top line, do 'J'
 Go to last edit - g + ;
 
+Filtering in VIM, very helpful while working with large files
+Tips and commands to be added
+1. Use search and replace - http://vim.wikia.com/wiki/Search_and_replace
+Visual select till end of file: Shift + g
+Examples:
+
+1. :%s/sandeep/kumar/gc - replace all occurrences of 'sandeep' by 'kumar'
+in the file globally and ask for confirmation [then 'y' for one confirmation,
+and 'a' for all confirmations]
+2. :%s/sandeep[0-9]\+/kumar/gc - replace all occurrences such sandeep[digits] by kumar
+3. :%s/MAC=[:0-9]\+/ip/gc
+4. sort u (sort all lines and remove duplicates)
+5. :g/profile/d - delete all lines that contain the string "profile"
+6. :!g/profile/d - delete all the lines that don't contain the string "profile"
+note that "!g" is same as "v"
+7. :v/error\|warn\|fail/d - delete all lines except those that contain "error" or "warn" or "fail" 
+
+
 # Move around bash command
 Ctrl-U: delete to the beginning of line
 Ctrl-K: delete to the end of line
@@ -320,6 +338,8 @@ Usage:
 3. Ctrl+R - search shell commands from history
 4. agf . or agf search-term for fuzzy grep using ag
 FUZZY_SEARCH
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 #Launch fzf in the current dir and open the selected file with vim
 o() {
