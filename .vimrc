@@ -27,3 +27,15 @@ map ; :FZF<CR>
 
 "Setting for vim-pathogen, needed for vim-fugitive
 execute pathogen#infect()
+
+"Block edit in vim
+"visual mode, then shift + i then edit and then ESC
+
+" =============== Keyboard Shortcuts ================
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+map <C-L> :tabn<CR>
+map <C-H> :tabp<CR>
+
+"Install vim-searchindex for better vim search experience
+"https://github.com/google/vim-searchindex
