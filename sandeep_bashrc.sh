@@ -19,6 +19,7 @@ Great tools/settings to always have:
 5. ag (use ag instread of grep)
 6. diff-so-fancy instead of diff (refer to .gitconfig)
 7. Passwordless ssh for logging to dev vm, and sss (also set no confirmation on ssh to a new machine)
+8. agf - Super fast alternative of grep
 
 Files to take to completely migrate from one dev machine to another:
 1. This one
